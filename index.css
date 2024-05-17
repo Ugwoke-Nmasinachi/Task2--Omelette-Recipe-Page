@@ -1,0 +1,98 @@
+html{
+    background-color: hwb(31 85% 5%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;/*The website's default font*/
+    font-size: 16px;/*The website's default font size*/
+}
+.wrapper{
+    background-color: white;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width:600px;
+    margin: 50px auto 50px auto;/*allows the box to be at the center of the page*/
+    padding: 30px;
+}
+hr{
+   border:1px solid hsl(30, 18%, 87%);/*this is to add color to all the <hr> line*/
+}
+figure img{
+   max-width:100%;/*ensures the image  takes 100% of its container*/
+   border-radius:6px;
+   padding-bottom:15px;/*gives the image a little space underneath it*/
+}
+header h1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    padding-bottom: 10px;/*gives the text a little space underneath it*/
+}
+header p{
+    font-size: 10px;
+    padding-bottom: 10px;/*gives the text a little space underneath it*/
+}
+#prep-time{
+    background-color: hsl(330, 100%, 94%) ;
+    border-radius: 10px;
+    margin-top: 20px;
+    padding: 12px 0 12px 50px;
+    line-height: 1.9;/*gives the lines spacing between them*/
+}
+#prep-time h2{
+    color:hsl(332, 51%, 32%) ;
+    font-size: 20px;
+    margin-left:-30px;/*allows the text to move to the left a little*/
+}
+#ingredients{
+    padding: 12px 0 12px 30px;
+    line-height: 1.9;/*gives the lines spacing between them*/
+}
+#ingredients h2{
+    color:hsl(14, 45%, 36%);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:-30px;/*allows the text to move to the left a little*/
+}
+#instructions{
+    padding: 12px 0 12px 30px;
+    line-height: 1.4;/*gives the lines spacing between them*/
+}
+#instructions h2{
+    color:hsl(14, 45%, 36%);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left:-30px;/*allows the text to move to the left a little*/
+    padding-bottom: 10px;/*gives the text a little space underneath it*/
+}
+/*this will only affect the numbers on the ordered list of the instructions*/
+#instructions ol li::marker{
+    color:hsl(14, 45%, 36%);
+    font-weight: 800;
+}
+#nutrition h2{
+    color:hsl(14, 45%, 36%);
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;   
+    margin: 15px 0;
+}
+#nutrition p{
+    margin-bottom: 10px;/*gives the text a little space underneath it*/
+}
+table tr td {
+    border-bottom:1px solid hsl(30, 18%, 87%);
+    width: 100%;/*ensures the table takes 100%of the width available*/
+    padding: 10px;
+}
+/*this affects the bolded part in nutrition which is the numbers*/
+table tr td b{
+    color:hsl(14, 45%, 36%);
+}
+/*for screen sizes less than 500px wide*/
+@media screen and (width < 500px) {
+    .wrapper{
+        width:100%;/*it allows the box take up the entire page*/
+        margin:0;/*removes any margin*/
+    }
+}
